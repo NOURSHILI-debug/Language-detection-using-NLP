@@ -1,2 +1,36 @@
-# Language-detection-using-NLP
-# Détection de la langue d’un texte (NLP)  ## Description  Ce projet vise à développer un système de **détection automatique de la langue d’un texte** en utilisant le **Traitement Automatique du Langage Naturel (NLP)** et le **Machine Learning (ML)**.  Le modèle est capable de prédire la langue d’un texte parmi **17 langues**.  ## Langues supportées (17)  Allemand, Anglais, Arabe, Danois, Espagnol, Français, Grec, Hindi, Italien, Kannada, Malayalam, Néerlandais, Portugais, Russe, Suédois, Tamoul et Turc.  ## Jeu de données  * Fichier : `language_detection.csv` * 10 267 textes * Colonnes :    * `Text` : texte écrit   * `Language` : langue du texte  Les données proviennent de Wikipédia (web scraping).  ## Méthodologie  1. Exploration et analyse des données 2. Encodage des langues (LabelEncoder) 3. Prétraitement du texte (suppression des symboles et chiffres) 4. Vectorisation avec **Bag of Words** (CountVectorizer) 5. Séparation apprentissage / test (80 % / 20 %) 6. Entraînement avec **Naive Bayes Multinomial** 7. Évaluation avec accuracy et matrice de confusion  ## Évaluation  Les performances sont évaluées à l’aide de :  * La précision globale (accuracy) * La matrice de confusion (%)  Le modèle montre de très bonnes performances, notamment pour les langues ayant des alphabets distincts.  ## Prédiction  Le système permet de prédire la langue de nouveaux textes jamais vus lors de l’apprentissage.  ## Technologies  Python, Pandas, Scikit-learn, Numpy, Matplotlib, Seaborn
+# Language Detection using NLP
+
+## Description
+This project implements a **language detection system** that predicts the language of a given text using **Natural Language Processing (NLP)** and **Machine Learning** techniques.
+
+The model supports **17 languages**.
+
+## Supported Languages
+German, English, Arabic, Danish, Spanish, French, Greek, Hindi, Italian, Kannada, Malayalam, Dutch, Portuguese, Russian, Swedish, Tamil, Turkish.
+
+## Dataset
+- File: `language_detection.csv`
+- Size: 10,267 text samples
+- Columns:
+  - `Text`: written text
+  - `Language`: language label  
+- Source: Wikipedia (web scraping)
+
+## Methodology
+1. Data exploration
+2. Label encoding of languages
+3. Text preprocessing (remove symbols & digits)
+4. Text vectorization using **Bag of Words**
+5. Train/test split (80% / 20%)
+6. Model training using **Multinomial Naive Bayes**
+7. Evaluation with accuracy and confusion matrix
+
+## Evaluation
+The model achieves high accuracy, especially for languages with distinct alphabets.  
+Performance is measured using **accuracy** and a **confusion matrix**.
+
+## Prediction
+The trained model can predict the language of new, unseen texts.
+
+## Technologies
+Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
